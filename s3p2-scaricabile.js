@@ -46,7 +46,7 @@ let aggiungiCssToLink = function () {
 }
 
 // ESERCIZIO 11: Scrivi una funzione per aggiungere/togliere una classe CSS a tutte le immagini della tabella; questa classe deve modificare la visibilità/invisibilità dell'immagine
-// ESERCIZIO 12: Scrivi una funzione per cambiare il colore del prezzo di ogni prodotto in uno differente, ogni volta che viene invocata
+
 
 
 //PRIMO METODO: VA BENE PER RIMUOVERE L'ELEMENTO MA NON SO COME FARE SE VOGLIO RIAGGIUNGERLO
@@ -62,39 +62,21 @@ let aggiungiCssToLink = function () {
 
 //SECONDO METODO: AGGIUNGENDO UNA CLASSE CSS PER ADD AND REMOVE POSSO APPLICARLA AD UN TAG HTML FACENDO AZIONARE LA FUNZIONE CORRISPONDENTE DA UN ONCLICK SUI DUE DIVERSI BUTTON ADD & REMOVE
 
-//NON SONO RIUSCITO A FARLO
-
 
 
 let gestisciImg = function () {
     let getImg = document.querySelectorAll('img')
-    for(let i = 0; i < getImg.length; i++) {
+    for (let i = 0; i < getImg.length; i++) {
         const img = getImg[i]
         img.classList.toggle('hidden')
     }
-     
-    }
 
-    
-
-    
+}
 
 
 
 
 
-
-   
-//AGGIUNGERE CLASSE PER RIAGGIUNGERE L'IMMAGINE
-
-/* function showImage() {
-    const createImg = document.createElement('img')
-    let img = document.querySelector('img');
-    for(let i= 0; i < img.length; i++) {
-        console.log(createImg)
-        const imgSingola = img[i]
-        
-    }
-} */
+// ESERCIZIO 12: Scrivi una funzione per cambiare il colore del prezzo di ogni prodotto in uno differente, ogni volta che viene invocata
 
 
