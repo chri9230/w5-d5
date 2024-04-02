@@ -2,16 +2,9 @@
     background-color: green;
 } */
 
-/* .nonVisible {
-    background-color: red;
-}
-
-
-.visible {
-    display: inline-block;
-    width: 100px;
-}
- */
+ .hidden {
+    display: none;
+ }
 
 
  

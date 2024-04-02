@@ -51,31 +51,32 @@ let aggiungiCssToLink = function () {
 
 //PRIMO METODO: VA BENE PER RIMUOVERE L'ELEMENTO MA NON SO COME FARE SE VOGLIO RIAGGIUNGERLO
 
-let rimuoviImg = function () {
+/* let rimuoviImg = function () {
 
     const img = document.querySelectorAll('img')
     for (let i = 0; i < img.length; i++) {
         const imgSingola = img[i]
         imgSingola.remove()
     }
-}
+} */
 
 //SECONDO METODO: AGGIUNGENDO UNA CLASSE CSS PER ADD AND REMOVE POSSO APPLICARLA AD UN TAG HTML FACENDO AZIONARE LA FUNZIONE CORRISPONDENTE DA UN ONCLICK SUI DUE DIVERSI BUTTON ADD & REMOVE
 
 //NON SONO RIUSCITO A FARLO
-/* 
-let img 
-let imgSingola 
 
-let rimuoviImg = function () {
 
-     img = document.querySelectorAll('img')
-     for (let i = 0; i < img.length; i++) {
-         imgSingola = img[i]
-         imgSingola.classList.add('nonVis')
-        }
+
+let gestisciImg = function () {
+    let getImg = document.querySelectorAll('img')
+    for(let i = 0; i < getImg.length; i++) {
+        const img = getImg[i]
+        img.classList.toggle('hidden')
     }
- */
+     
+    }
+
+    
+
     
 
 
