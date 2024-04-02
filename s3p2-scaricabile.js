@@ -74,9 +74,34 @@ let gestisciImg = function () {
 }
 
 
-
-
-
 // ESERCIZIO 12: Scrivi una funzione per cambiare il colore del prezzo di ogni prodotto in uno differente, ogni volta che viene invocata
 
 
+
+ function cambiaColoreTesto() {
+    const randomColor = trovaColore()
+    let prendiPrezzi = document.querySelectorAll(".prezzo")
+    for(let i = 0; i < prendiPrezzi.length; i++){
+        let prezzo = prendiPrezzi[i]
+        prezzo.style.color = randomColor
+        
+    }
+}
+
+let trovaColore = function() {
+    const color1 = Math.round(Math.random() * 255) 
+    const color2 = Math.round(Math.random() * 255) 
+    const color3 = Math.round(Math.random() * 255) 
+
+    return "rgb(" + color1 + "," + color2 + "," + color3 + ")"
+}
+
+/* const setRandomColor = function () {
+    const randomColor = getRandomColor()
+    let prices = document.querySelectorAll('.price')
+    for (let i = 0; i < prices.length; i++) {
+      let singlePrince = prices[i]
+      singlePrince.style.color = randomColor
+    }
+
+} */
